@@ -140,7 +140,8 @@ int main()
    		 	printf("Escolha a opção desejada do menu\n\n"); //Função responsavel por imprimir algo na tela
    			printf("\t1 - Registrar nomes\n"); //Função responsavel por imprimir algo na tela
    			printf("\t2 - Consultar nomes\n"); //Função responsavel por imprimir algo na tela
-   		 	printf("\t3 - Deletar nomes\n\n"); //Função responsavel por imprimir algo na tela
+   		 	printf("\t3 - Deletar nomes\n"); //Função responsavel por imprimir algo na tela
+   		 	printf("\t4 - Sair do sistema.\n\n"); //Funçao responsavel por sair do sistema.
    		 	printf("Opção: ");//fim do menu
    		 
    		 	scanf("%d", &opcao); //Armazenando a escolha do usuario
@@ -160,6 +161,11 @@ int main()
    		  		
    		  		case 3:
    		  		deletar(); //chamada de funções.
+				break;
+				
+				case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0;
 				break;
 				
 				default:
